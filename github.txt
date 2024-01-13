@@ -1,0 +1,152 @@
+Git And Github:
+
+In Git
+
+1.configure your name globally
+
+$ git config --global user.name <username>
+$ git config --global user.name Dipali
+
+$ git config --global user.name
+  Dipali
+
+2.configure your email globally
+
+$ git config --global user.email <email_address>
+$ git config --global user.email dipalidhanwade@gmail.com
+
+$ git config --global user.email
+  dipalidhanwade@gmail.com
+
+3.To open vscode 
+
+$ code .
+
+4.Cloning code from another server
+
+$ git clone <URL>
+
+5.Initializes empty git repository on your local system
+
+$ git init
+
+6.Shows you all the files hidden files also
+
+$ ls -lart
+
+7.Shows you the current status like untracked files and current branch and all
+
+$ git status
+
+8.flow of file
+
+git add {Posing 4 pic } ------------>untracked file -------------->get tracked---------------->addede in staging area ----> staging area ------->
+
+git Commit {Takes my pic }-------->file have there snapshot now ------------>now that file became unmodified one------------->if you want you can edit----------> modified one---->staging area ------->
+
+9.Add untracked files to staging area 
+
+$ git add <file_name>  #for one file 
+
+$ git add .  #for all the files
+
+-----> followed by $git status # To see if files are tracked or not.
+
+10.File structure is saved
+
+$ git commit  -----> hit "Enter"
+
+vim editor opens up ---> press "i" ---> file now is in a "INSERT" mode---> add commit message at 1st line : "Initial commit done" ---> press "esc" and type ":wq" & save it.
+
+-----> followed by $git status  # To see if everything is commited or not || working tree is clean.
+
+10.1 What happens in staging area to commit when you have file in staged area and you edit it.
+
+file(10 lines) ----> git add ---> added to staging area ---> edited file(added new 5 lines) -----> .git cache (stored there) # knows now it only has to add 5 lines---->
+
+---->and changes are considered and staged through and then commited 
+
+
+11.Add more than one files into staging area
+
+$ touch file1.html   |
+$ touch file2.css    |   { added some more files to add them at once }
+$ touch file3.js     |
+
+$ git status         |   { now you can see 3 untracked files } 
+
+$ git add -A         |   { adds all 3 files to the staging area }
+
+$ git status         |   { now you can see those 3 files are tracked } && { added to the staging area which you can unstage }
+
+12.Do dome changes in "file.html" and save it and check
+
+$ git status  
+
+# now you see
+
+$ touch file1.html   |
+$ touch file2.css    |   { Staged }
+$ touch file3.js     |
+
+$ touch file1.html    |   { modified }
+
+# now add this file to staging area once again
+
+$ git add -A  OR   $ git add file1.html   |  { This file goes in staging area once again }
+
+# now yoou can see that
+
+$ git status
+
+$ touch file1.html   |
+$ touch file2.css    |   { Staged }
+$ touch file3.js     |
+
+13.git commit
+
+$ git commit -m "Added files"
+
+$ git status   #nothong to commit,working trr is clean
+
+14.git checkout try to matche file or files with its working directories to its last commit(if you by any chance erase somthing from file it get backs to its last commit).
+
+$ git checkout <filename>
+
+$ git checkout -f       # matches all the files to its last commit
+
+14. To check logs
+
+$ git log         # can see all the commits
+
+$ git log -p -1   # to see number of lines and to see all the changes "-1" to get that much no of commits  # press :q
+
+15.Git diff will compare will compare the working tree with staging area
+
+$ git diff 
+
+$ git diff --staged   # compares last commit with staging area
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
