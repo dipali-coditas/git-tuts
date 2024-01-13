@@ -1,2 +1,6 @@
 This is a version 1 of my project and second version is upcoming.
+<<<<<<< HEAD
 Upcoming version is v2 ++ ++
+=======
+Upcoming version is v2 +
+>>>>>>> dev
